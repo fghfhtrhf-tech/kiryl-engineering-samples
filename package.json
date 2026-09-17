@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": false,
   "type": "module",
-  "description": "Sanitized TypeScript samples of production patterns: jobs, onboarding, tenancy, dispatch, realtime, signed callbacks, SSE, and programmatic routes.",
+  "description": "Sanitized TypeScript samples of production patterns across fleet ops, multi-tenant dispatch, signed wallet callbacks, SEO, and operations.",
   "license": "MIT",
   "scripts": {
     "test": "tsx --test tests/**/*.test.ts",

@@ -1,0 +1,38 @@
+CREATE TABLE companies_billing (
+  company_id BIGINT PRIMARY KEY,
+  plan TEXT NOT NULL,
+  renews_at TIMESTAMPTZ NOT NULL,
+  past_due BOOLEAN NOT NULL DEFAULT FALSE
+);
+
+CREATE TABLE invoices (
+  id BIGSERIAL PRIMARY KEY,
+  tenant_id TEXT NOT NULL,
+  order_id TEXT NOT NULL,
+  amount NUMERIC(10,2) NOT NULL,
+  tax NUMERIC(10,2) NOT NULL,
+  total NUMERIC(10,2) NOT NULL,
+  issued_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
+
+CREATE TABLE live_locations (
+  driver_id TEXT PRIMARY KEY,
+  lat DOUBLE PRECISION NOT NULL,
+  lng DOUBLE PRECISION NOT NULL,
+  heading DOUBLE PRECISION,
+  speed DOUBLE PRECISION,
+  updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
+
+CREATE TABLE rate_limit_hits (
+  key TEXT NOT NULL,
+  hit_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
+
+CREATE TABLE access_tokens (
+  id TEXT PRIMARY KEY,
+  user_id TEXT NOT NULL,
+  tenant_id TEXT NOT NULL,
+  role TEXT NOT NULL,
+  expires_at TIMESTAMPTZ NOT NULL
+);
