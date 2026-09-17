@@ -1,7 +1,10 @@
 # Engineering samples — Kiryl Bahdanski
 
 Public, rewritten TypeScript modules that show how I actually ship production
-systems. Original product repositories stay private: they contain customer
+systems. This is the only public code repository. The cinematic portfolio is
+at [fghfhtrhf-tech.github.io/kiryl-engineering-samples](https://fghfhtrhf-tech.github.io/kiryl-engineering-samples/).
+
+Original product repositories stay private: they contain customer
 data, partner contracts, infrastructure secrets, and years of operational
 history.
 
@@ -80,4 +83,5 @@ Node 22+. CI runs the same commands on every push. 49 tests at last publish.
 ## Contact
 
 Kiryl Bahdanski · Minsk · remote / relocation  
-fghfhtrhf@gmail.com · Telegram [@kiryxatg](https://t.me/kiryxatg)
+fghfhtrhf@gmail.com · Telegram [@kiryxatg](https://t.me/kiryxatg)  
+Site: [fghfhtrhf-tech.github.io/kiryl-engineering-samples](https://fghfhtrhf-tech.github.io/kiryl-engineering-samples/)
